@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Year Project - Text Summarization</title>
+        <style>
+            textarea {
+                width: 50%;
+                height: 50%;
+                font-family:georgia,garamond,serif;
+                font-style:italic;
+                text-align: left;
+                outset: #000000;
+                overflow:auto;
+                padding: 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <h4>Group 2 [ Sayak Chakraborty - 161001001138, Sayan Mondal - 161001001078 ]</h4>
+        <form action="/summary" method="post" width>
+            <textarea name = "input" rows="30" col="30" >
+            </textarea>
+            <br>
+            <select id="Technique To Be Used" name="options">
+                <option value="freq-based">Frequency Based</option>
+                <option value="text-rank">Text-Rank (Graphical Method)</option>
+            </select>
+            <br>
+            <input name = "technique" type="submit" value= "Get Summary">
+        </form>
+    </body>
+</html>
